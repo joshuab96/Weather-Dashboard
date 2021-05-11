@@ -1,6 +1,9 @@
 .header {
     text-align: center;
-    border-bottom: black, 20px, solid !important;
+    margin-bottom: 40px;
     }
-    
+
+.weatherCard {
+    border: solid, 1px, black;
 }
+
