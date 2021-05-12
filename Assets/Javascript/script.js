@@ -32,7 +32,7 @@ function currentlocalWeather(city) {
         });
 }
 
-function parseCityLatLong(lat, lon) {
+function futureForecast(lat, lon) {
     var citylatlong = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=e29cd95f952ebb202a3a51f08c0a0d46`
 
     fetch(citylatlong)
@@ -40,7 +40,7 @@ function parseCityLatLong(lat, lon) {
             return response.json();
         })
         .then(function (data) {
-
+            console.log(data)
         });
 }
 
